@@ -14,12 +14,6 @@ extern int rollChannel, pitchChannel, throttleChannel, yawChannel, armedChannel,
 
 const char* motd =
 "\nWelcome to\n"
-" _______  __       __  ___   ___\n"
-"|   ____||  |     |  | \\  \\ /  /\n"
-"|  |__   |  |     |  |  \\  V  /\n"
-"|   __|  |  |     |  |   >   <\n"
-"|  |     |  `----.|  |  /  .  \\\n"
-"|__|     |_______||__| /__/ \\__\\\n\n"
 "Commands:\n\n"
 "help - show help\n"
 "p - show all parameters\n"

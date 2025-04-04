@@ -75,7 +75,7 @@ Parameter parameters[] = {
 };
 
 void setupParameters() {
-	storage.begin("flix", false);
+	storage.begin("IDn", false);
 	// Read parameters from storage
 	for (auto &parameter : parameters) {
 		if (!storage.isKey(parameter.name)) {

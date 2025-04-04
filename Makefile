@@ -6,7 +6,7 @@ build: .dependencies
 	arduino-cli compile --fqbn $(BOARD) flix
 
 upload: build
-	arduino-cli upload --fqbn $(BOARD) -p "$(PORT)" flix
+	arduino-cli upload --fqbn $(BOARD) -p "$(PORT)" --upload-property upload.speed=115200 flix
 
 monitor:
 	arduino-cli monitor -p "$(PORT)" -c baudrate=115200
@@ -17,7 +17,7 @@ dependencies .dependencies:
 	arduino-cli lib update-index
 	arduino-cli lib install "FlixPeriph"
 	arduino-cli lib install "MAVLink"@2.0.12
-	touch .dependencies
+	touch .dependencie
 
 gazebo/build cmake: gazebo/CMakeLists.txt
 	mkdir -p gazebo/build
