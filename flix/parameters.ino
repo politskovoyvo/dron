@@ -74,6 +74,7 @@ Parameter parameters[] = {
 #endif
 };
 
+
 void setupParameters() {
 	storage.begin("flix", false);
 	// Read parameters from storage

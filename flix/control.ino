@@ -72,10 +72,6 @@ void control() {
 }
 
 void interpretRC() {
-	armed = controls[throttleChannel] >= 0.05 &&
-		(controls[armedChannel] >= 0.5 || isnan(controls[armedChannel])); // assume armed if armed channel is not defined
-
-	// NOTE: put ACRO or MANUAL modes there if you want to use them
 	if (controls[modeChannel] < 0.25) {
 		mode = STAB;
 	} else if (controls[modeChannel] < 0.75) {

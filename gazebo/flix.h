@@ -12,6 +12,7 @@
 
 #define WIFI_ENABLED 1
 
+extern bool armed;
 double t = NAN;
 float dt;
 float motors[4];
@@ -33,6 +34,7 @@ void controlAttitude();
 void controlRate();
 void controlTorque();
 const char* getModeName();
+void armMotors();
 void sendMotors();
 bool motorsActive();
 void testMotor(uint8_t n);

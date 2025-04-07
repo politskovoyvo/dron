@@ -9,5 +9,6 @@
 	"C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
 	"C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "sameLine",
 	"C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
-	"C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine"
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
+	"idf.pythonInstallPath": "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3"
 }

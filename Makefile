@@ -6,7 +6,7 @@ build: .dependencies
 	arduino-cli compile --fqbn $(BOARD) flix
 
 upload: build
-	arduino-cli upload --fqbn $(BOARD) -p "$(PORT)" flix
+	arduino-cli upload --fqbn $(BOARD) -p "$(PORT)" --upload-property upload.speed=115200 flix
 
 monitor:
 	arduino-cli monitor -p "$(PORT)" -c baudrate=115200
